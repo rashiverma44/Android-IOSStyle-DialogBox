@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/msg_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/custom_alert_msg_msg_header_margin_top"
+                android:gravity="center"
+                android:paddingBottom="@dimen/custom_alert_msg_padding"
+                android:paddingLeft="@dimen/custom_alert_msg_padding"
+                android:paddingRight="@dimen/custom_alert_msg_padding"
+                android:textSize="@dimen/custom_alert_txt_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/custom_alert_msg_margin_top"
+                android:gravity="center"
+                android:minHeight="@dimen/custom_alert_msg_min_height"
+                android:paddingLeft="@dimen/custom_alert_msg_padding"
+                android:paddingRight="@dimen/custom_alert_msg_padding"
+                android:textSize="@dimen/custom_alert_msg_txt_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_alert_view_height"
+                android:layout_marginTop="@dimen/custom_alert_view_margin_top"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_alert_l_layout_height"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ok_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_text_view"
+                    android:gravity="center"
+                    android:text="Retry"
+                    android:textAllCaps="false"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/custom_alert_btn_txt_size"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_text_view"
+                    android:gravity="center"
+                    android:text="Start Over"
+                    android:textAllCaps="false"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/custom_alert_btn_txt_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
