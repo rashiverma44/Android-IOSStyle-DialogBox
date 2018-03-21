@@ -1,9 +1,9 @@
 # Android-IOSStyle-DialogBox
 This is liberary basically used for designing IOS styled Dialogbox in an Android Application.
 
-##BUILD
+## BUILD
 
-###Step 1. Add the JitPack repository to your project-level build file 
+### Step 1. Add the JitPack repository to your project-level build file 
 
 ```R
 
@@ -16,7 +16,7 @@ allprojects {
 
 ```
 
-###Step 2. Add the dependency in your app level build file 
+### Step 2. Add the dependency in your app level build file 
 
 ```R
 
